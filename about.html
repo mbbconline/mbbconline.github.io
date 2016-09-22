@@ -12,50 +12,24 @@ skills:
     percent: 61
 
 members:
-  - name: Mark Wayne
+  - name: Debi Moye
     position: founder
     desc:
       consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
     avatar: images/@stock/member-1.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-  - name: Kate Holms
-    position: Creative Director
+  - name: Kyle Haugen
+    position: President
     desc:
       consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
     avatar: images/@stock/member-2.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-dribbble
-        url: http://dribbble.com
-  - name: Tom Hason
-    position: Designer
+  - name: Winston Williams
+    position: Manager
     desc:
       consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
     avatar: images/@stock/member-3.jpg
     socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-tumblr
-        url: http://tumblr.com
-  - name: Lily Whrem
-    position: Developer
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-4.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
+
+
 ---
 
 <div class='full'>
@@ -90,27 +64,16 @@ members:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>The team</h3>
+    <h3>The Management Team</h3>
     <div class='spacing'></div>
   </div>
 </div>
 <div class='row'>
   {% for member in page.members %}
-    <div class='small-6 medium-3 large-3 columns'>
+    <div class='large-4 medium-4 columns'>
       <div class='mod modTeamMember style-2'>
         <div class='member'>
           <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
-          <div class='overlay'>
-            <ul class='socials'>
-              {% for social in member.socials %}
-                <li>
-                  <a href='{{social.url}}'>
-                    <i class='{{social.icon_class}}'></i>
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
         </div>
         <h3>{{member.name}}</h3>
         <p class='position'>{{member.position}}</p>
