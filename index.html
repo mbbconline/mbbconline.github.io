@@ -66,12 +66,18 @@ testimonials:
     avatar: images/@stock/author-avatar-3.png
 
 clients:
-  - images/@stock/client-grey-1.png
-  - images/@stock/client-grey-2.png
-  - images/@stock/client-grey-3.png
-  - images/@stock/client-grey-4.png
-  - images/@stock/client-grey-5.png
-  - images/@stock/client-grey-6.png
+  - image: images/@stock/000676Holden.png
+    name: Micheal Holden
+  - image: images/@stock/000794blackmon.png
+    name: Tom Blackmon
+  - image: images/@stock/00029heard.png
+    name: K Heard
+  - image: images/@stock/00029heard.png
+    name: K Heard
+  - image: images/@stock/00029heard.png
+    name: K Heard
+  - image: images/@stock/00849Hoffman.png
+    name: Michelle Hoffman
 ---
 
 <div class='full no-padding'>
@@ -108,11 +114,11 @@ clients:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>
+    <h2>
       Our Agents
       /
       <a href='portfolio.html'>View more</a>
-    </h3>
+    </h2>
     <div class='spacing'></div>
   </div>
   <div class='mod modGallery'>
@@ -138,7 +144,7 @@ clients:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>Our Company</h3>
+    <h2>Our Company</h2>
     <div class='two spacing'></div>
   </div>
 </div>
@@ -160,23 +166,65 @@ clients:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='medium-6 columns'>
-    <h3>This is where our Location  </h3>
+    <h2>Our Locations  </h2>
+    <div><h3>Main Office: 866-905-3808</h3></div>
+  </div>
+</div>
+
+    <div class='row'>
+
+        <div class='medium-3 large-3 columns'>
+    <div>Augusta: 870-347-1455</div>
+    <div>Batesville: 870-793-9595</div>
+    <div>Beebe: 501-882-0505</div>
+    <div>Cabot: 501-843-9390</div>
+    <div>Conway: 501-513-9596</div>
+  </div>
+
+
+
+      <div class='medium-3 large-3 columns'>
+    <div>Des Arc: 870-256-5550</div>
+    <div>Forrest City: 870-630-9595</div>
+    <div>Harrisburg : 870-578-7999</div>
+    <div>Heber Springs: 501-887-9595</div>
+    <div>Lepanto: 870-667-4700</div>
+  </div>
+
+
+      <div class='medium-3 large-3 columns'>
+    <div>Little Rock: 501-255-1892</div>
+    <div>Lonoke: 501-438-0336</div>
+    <div>Marianna: 870-821-3200</div>
+    <div>Morrilton: 501-242-4493</div>
+    <div>Newport: 870-201-2202</div>
+  </div>
+
+
+        <div class='medium-3 large-3 columns'>
+    <div>Paragould: 870-586-5030</div>
+    <div>Pocahontas: 888-240-8767</div>
+    <div>Searcy: 501-268-2446</div>
+    <div>Wynne: 870-238-9585</div>
+
 </div>
 </div>
 <hr>
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>Our clients</h3>
+    <h2>Most Wanted</h2>
     <div class='spacing'></div>
     <div class='mod modClients' data-slides_to_show='5'>
       <div class='clients'>
         {% for client in page.clients %}
-          <div><img alt="" src="{{client}}" /></div>
+          <div><img alt="" src="{{client.image}}" />{{client.name}}</div>
+
         {% endfor %}
       </div>
     </div>
   </div>
+</div>
 </div>
 <hr>
 <div class='two spacing'></div>
@@ -221,7 +269,7 @@ clients:
   <div class='mod modCallToAction'>
     <div class='row'>
       <div class='medium-9 large-9 columns'>
-        <p>Like what you see here? Checkout this theme and start to build your site immediately.</p>
+        <p>Want to be a Bail Bond Agent.</p>
       </div>
       <div class='medium-3 large-3 columns'>
         <a class='button' target="_blank" href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Learn more</a>
